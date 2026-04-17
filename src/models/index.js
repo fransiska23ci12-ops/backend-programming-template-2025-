@@ -14,7 +14,7 @@ const connect = async () => {
 
 connect();
 
-// import model
+
 const Books = require('./books');
 
 module.exports = {
