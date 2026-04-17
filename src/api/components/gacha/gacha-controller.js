@@ -15,7 +15,7 @@ async function gacha(req, res, next) {
   }
 }
 
-// ⬇️ TAMBAH DI SINI
+
 async function history(req, res, next) {
   try {
     const { userId } = req.params;
@@ -31,7 +31,7 @@ async function history(req, res, next) {
   }
 }
 
-// ⬇️ UBAH EXPORT
+
 module.exports = {
   gacha,
   history,
