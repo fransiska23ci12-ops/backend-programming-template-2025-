@@ -36,12 +36,12 @@ async function gacha(userId) {
   return win;
 }
 
-// ⬇️ TAMBAH INI
+
 async function getHistory(userId) {
   return repo.getHistoryByUser(userId);
 }
 
-// ⬇️ UBAH INI
+
 module.exports = {
   gacha,
   getHistory,
