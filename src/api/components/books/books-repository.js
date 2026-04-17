@@ -8,7 +8,12 @@ async function create(title) {
   return Books.create({ title });
 }
 
+async function getBookById(id) {
+  return Books.findById(id);
+}
+
 module.exports = {
   getBooks,
   create,
+  getBookById,
 };

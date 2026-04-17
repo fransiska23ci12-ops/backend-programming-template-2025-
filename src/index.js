@@ -1,3 +1,7 @@
+require('dotenv').config();
+
+console.log("MONGO_URI:", process.env.MONGO_URI);
+
 const { env, port } = require('./core/config');
 const logger = require('./core/logger')('app');
 const server = require('./core/server');

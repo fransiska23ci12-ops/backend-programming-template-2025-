@@ -27,7 +27,17 @@ async function createBook(request, response, next) {
   }
 }
 
+async function getBook(request, response, next) {
+  try {
+    const book = await booksService.getBook(request.params.id);
+    response.json(book);
+  } catch (error) {
+    next(error);
+  }
+}
+
 module.exports = {
   getBooks,
   createBook,
+  getBook,
 };
